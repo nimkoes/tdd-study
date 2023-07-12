@@ -1,0 +1,5 @@
+package me.nimkoes.tdd.chap15;
+
+public interface Expression {
+    Money reduce(Bank bank, String to);
+}
