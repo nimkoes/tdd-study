@@ -1,7 +1,7 @@
 package me.nimkoes.tdd.chap04;
 
 public class Dollar {
-    int amount;
+    private int amount;
 
     public Dollar(int amount) {
         this.amount = amount;
