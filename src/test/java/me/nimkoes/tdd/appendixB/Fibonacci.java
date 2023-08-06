@@ -1,14 +1,17 @@
 package me.nimkoes.tdd.appendixB;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Fibonacci {
 
     @Test
     public void testFibonacci() {
-        Assertions.assertEquals(0, fib(0));
-        Assertions.assertEquals(1, fib(1));
+        int cases[][] = {{0, 0}, {1, 1}};
+        for (int i = 0; i < cases.length; i++) {
+            assertEquals(cases[i][1], fib(cases[i][0]));
+        }
     }
 
     int fib(int n) {
